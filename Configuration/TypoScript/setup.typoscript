@@ -1,7 +1,7 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-@import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:base_vite_sitepackage/Configuration/TypoScript/Extension/Form/setup.typoscript'
 
 ##########################
@@ -90,4 +90,68 @@ page {
     includeJSFooter {
         base_vite_sitepackage_scripts = EXT:base_vite_sitepackage/Resources/Public/JavaScript/Dist/scripts.js
     }
+}
+#############################################
+#### overwrite content_animations layout ####
+#############################################
+lib.contentElement {
+  layoutRootPaths.10 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+  templateRootPaths.10 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+  partialRootPaths.10 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+  layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+  templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+  partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+}
+lib.contentContainer {
+  layoutRootPaths.10 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+  templateRootPaths.10 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+  partialRootPaths.10 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+  layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+  templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+  partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+}
+
+tt_content {
+  container_1_columns {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
+  container_1_columns_narrow < lib.contentContainer
+  container_1_columns_narrow {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
+  container_1_columns_tiny < lib.contentContainer
+  container_1_columns_tiny {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
+  container_2_columns {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
+  container_2_columns_right {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
+  container_2_columns_left {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
+  container_3_columns {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
+  container_4_columns {
+    layoutRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+    templateRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    partialRootPaths.100 = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+  }
 }

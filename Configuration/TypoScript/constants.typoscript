@@ -46,31 +46,19 @@ page {
 ##################
 ### EXTENSIONS ###
 ##################
-plugin.bootstrap_package {
+plugin
+  bootstrap_package {
     view {
         layoutRootPath = EXT:base_vite_sitepackage/Resources/Private/Layouts/
         partialRootPath = EXT:base_vite_sitepackage/Resources/Private/Partials/
         templateRootPath = EXT:base_vite_sitepackage/Resources/Private/Templates/
     }
-}
-
-
-########################
-### CONTENT ELEMENTS ###
-########################
-plugin.bootstrap_package_contentelements {
+  }
+  bootstrap_package_contentelements {
     view {
         layoutRootPath = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
         partialRootPath = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
         templateRootPath = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
     }
-}
-
-
-################################
-### BOOTSTRAP SCSS CONSTANTS ###
-################################
-plugin.bootstrap_package.settings.scss {
-    primary = #eb3e4a
-    secondary = #013859
+  }
 }
