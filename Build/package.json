@@ -1,5 +1,5 @@
 {
-  "name": "skom-base-vite-sitepackage",
+  "name": "skom-base_vite_sitepackage",
   "description": "This sitepackage is the base for TYPO3 with Vite and Bootstrap",
   "repository": {
     "type": "git",

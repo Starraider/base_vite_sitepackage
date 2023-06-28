@@ -1,9 +1,18 @@
 {
-    "name": "skom/base-vite-sitepackage",
+    "name": "skom/base_vite_sitepackage",
     "type": "typo3-cms-extension",
     "description": "This sitepackage is the base for TYPO3 with Vite and Bootstrap",
     "homepage": "https://www.skom.de",
     "license": ["GPL-2.0-or-later"],
+	"version": "11.0.0",
+	"authors": [
+		{
+			"name": "Sven Kalbhenn",
+			"email": "sven@skom.de",
+			"homepage": "https://www.skom.de",
+			"role": "Developer"
+		}
+	],
     "keywords": ["TYPO3 CMS"],
     "require": {
         "bk2k/bootstrap-package": "^13.0 || ^14.0"
