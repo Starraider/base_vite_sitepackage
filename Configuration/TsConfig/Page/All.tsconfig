@@ -1,0 +1,7 @@
+#
+# PageTS for Base Vite Sitepackage
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_vite_sitepackage/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_vite_sitepackage/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_vite_sitepackage/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_vite_sitepackage/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">

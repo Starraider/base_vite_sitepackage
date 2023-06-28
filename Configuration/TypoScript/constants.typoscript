@@ -1,0 +1,76 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_vite_sitepackage/Configuration/TypoScript/Extension/Form/constants.typoscript" condition="extension.isLoaded('form') == 1">
+
+############
+### PAGE ###
+############
+page {
+    theme {
+      breadcrumb.enableLevel = 1
+      canLogin = 1
+      cookieconsent.enable = 0
+      copyright {
+        enable = true
+        text = &copy; 2023 SKom
+      }
+      googleFont.enable = 0
+      language.enable = 1
+      navigation {
+        style = default
+        type = top
+      }
+      showBecomeMember = 1
+    }
+    logo {
+        file = EXT:base_vite_sitepackage/Resources/Public/Images/logo.svg
+        fileInverted = EXT:base_vite_sitepackage/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = Base Vite Sitepackage
+        linktitle = Base Vite Sitepackage
+    }
+    favicon {
+        file = EXT:base_vite_sitepackage/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:base_vite_sitepackage/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:base_vite_sitepackage/Resources/Private/Partials/Page/
+        templateRootPath = EXT:base_vite_sitepackage/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:base_vite_sitepackage/Resources/Private/Layouts/
+        partialRootPath = EXT:base_vite_sitepackage/Resources/Private/Partials/
+        templateRootPath = EXT:base_vite_sitepackage/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:base_vite_sitepackage/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:base_vite_sitepackage/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:base_vite_sitepackage/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
+}
