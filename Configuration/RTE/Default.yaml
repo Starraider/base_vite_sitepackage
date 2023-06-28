@@ -1,9 +1,65 @@
 imports:
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
-    - { resource: "EXT:bootstrap_package/Configuration/RTE/Default.yaml" }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
+    - { resource: 'EXT:bootstrap_package/Configuration/RTE/Default.yaml' }
+    - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
 
 editor:
     config:
+        removePlugins: null,
         contentsCss: "EXT:bootstrap_package/Resources/Public/Css/bootstrap4-rte.min.css"
+        stylesSet:
+            - { name: 'wie h1', element: 'div', attributes: { 'class': 'h1' } }
+            - { name: 'wie h2', element: 'div', attributes: { 'class': 'h2' } }
+            - { name: 'wie h3', element: 'div', attributes: { 'class': 'h3' } }
+            - { name: 'wie h4', element: 'div', attributes: { 'class': 'h4' } }
+            - { name: 'Key', element: 'kbd', attributes: { 'class': 'kbd' } }
+            - {
+                  name: 'Readmore',
+                  element: 'div',
+                  attributes: { 'class': 'moz-read-more' },
+              }
+        extraPlugins:
+            - find
+            - wordcount
+            - autolink
+            - autogrow
+            - codesnippet
+        codeSnippet_theme: 'obsidian'
+        codeSnippet_languages:
+            bash: 'Bash'
+            html: 'HTML'
+            javascript: 'JavaScript'
+            php: 'PHP'
+            css: 'CSS'
+            scss: 'SCSS'
+            typoscript: 'TypoScript'
+            yaml: 'Yaml'
+            xml: 'XML'
+
+buttons:
+    link:
+        properties:
+            class:
+                allowedClasses: 'link-arrow, link-page, link-folder, link-file, link-external, link-mail, btn btn-primary, btn btn-secondary, btn btn-outline-primary'
+
+classes:
+    'link-arrow':
+        name: 'Link-Pfeil Text'
+    'link-page':
+        name: 'interner Link'
+    'link-folder':
+        name: 'Ordner-Link'
+    'link-file':
+        name: 'Download-Link'
+    'link-external':
+        name: 'externer Link'
+    'link-mail':
+        name: 'E-Mail-Link'
+    'btn btn-primary':
+        name: 'Primär-Button'
+    'btn btn-secondary':
+        name: 'Sekundär-Button'
+    'btn btn-outline-primary':
+        name: 'Outline-Button'
